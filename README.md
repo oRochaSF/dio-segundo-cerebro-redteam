@@ -1,160 +1,84 @@
-# 🤖 DIO Agent
+# 🛡️ Segundo Cérebro: Fundamentos Ofensivos & Táticas de Red Team
 
-> Seu mentor de Inteligência Artificial para aprender mais e melhor na [DIO](https://dio.me).
-
-O **DIO Agent** é um agente de IA que acompanha você na sua jornada de estudos. Ele conhece as experiências da DIO (Bootcamps, Formações, Cursos, Desafios e muito mais) e ajuda você a estudar com mais clareza, destravar desafios e entender qualquer conceito.
-
-E você não precisa instalar nada complicado. Em **3 passos simples**, o seu mentor de IA estará pronto para usar.
+Repositório dedicado à documentação e estruturação do meu **Segundo Cérebro em Cibersegurança**, desenvolvido no **Google Gemini Notebook (NotebookLM)** para consolidar a transição profissional de infraestrutura e redes para segurança ofensiva (Red Team).
 
 ---
 
-## ✨ Antes de começar: dois conceitos rápidos
+## 🎯 1. Tema e Objetivo
 
-Para usar o DIO Agent, basta entender duas palavras. As duas estão no [Glossário completo](docs/glossary.md), mas aqui vai a versão rápida:
+> **"Consolidar táticas e técnicas de Red Team para acelerar minha transição de infraestrutura para segurança ofensiva, servindo como base prática para aplicar metodologias ofensivas em ambientes de infraestrutura e labs."**
 
-- 🧠 **Agente de IA:** um chatbot comum responde perguntas, como um buscador mais esperto. Um *agente* de IA vai além: ele lê, planeja e executa passos para te ajudar a alcançar um objetivo. É a diferença entre alguém que te explica o caminho e alguém que caminha junto com você. O DIO Agent é um agente desse tipo: um tutor particular que acompanha a sua evolução.
-
-- 🖥️ **Harness:** é o programa onde a conversa com o agente acontece. Vale a comparação: o agente é o professor, e o harness é a sala de aula. O mesmo professor pode dar aula em salas diferentes. Por isso o DIO Agent funciona em qualquer harness: você escolhe a "sala" no Passo 1, e o seu mentor continua o mesmo.
-
-Pronto. Com isso já dá para começar.
+O propósito deste caderno é servir como um copiloto e mentor técnico diário, permitindo analisar vulnerabilidades a partir da causa-raiz estrutural em protocolos e serviços corporativos (como Active Directory, redes L2/L3 e autenticação Windows), unindo a visão de ataque à prática de mitigação.
 
 ---
 
-## 🎯 O que o DIO Agent faz por você
+## 📚 2. Fontes Selecionadas e Justificativa de Confiança
 
-| Você precisa de... | O DIO Agent... |
-|--------------------|----------------|
-| Saber por onde começar | Monta um plano de estudos no seu ritmo |
-| Destravar um desafio | Te guia até a solução, sem entregar a resposta pronta |
-| Entender um conceito | Explica de forma simples, com analogias e exemplos |
+A curadoria foi desenhada seguindo o princípio de *Garbage In, Garbage Out*: apenas materiais autoritativos, perenes e com profundidade técnica e metodológica foram integrados.
 
-Ele conhece os formatos da DIO: Bootcamps, Formações, Acelerações, Cursos, English4Tech, Desafios de Código, Desafios de Projeto, Desafios Criativos, Lives e Mentorias. Assim, as recomendações sempre apontam para algo que você já tem na plataforma.
+### Frameworks Oficiais e Padrões Globais (Texto)
+* **MITRE ATT&CK® (Enterprise Matrix):** Base de conhecimento padrão mundial sobre táticas, técnicas e procedimentos (TTPs) de adversários reais. Permite classificar e correlacionar ações ofensivas com eventos de auditoria e segurança.
+* **NIST (National Institute of Standards and Technology):** Referência de diretrizes mundiais sobre governança, conformidade, arquitetura segura e mitigação de vulnerabilidades.
+* **OWASP Foundation:** A principal comunidade aberta de segurança de software e aplicações web (responsável pelo OWASP Top 10 e pelo Web Security Testing Guide - WSTG).
 
----
+### Guias Metodológicos e Técnicos (Texto)
+* **The Hacker Recipes:** Documentação aberta e aprofundada mantida por pesquisadores ofensivos, com foco detalhado em exploração interna de protocolos corporativos (Active Directory, Kerberos, LDAP, NTLM e sistemas Windows/Linux).
+* **Consolidar táticas e técnicas de Red Team... (Documento Interno):** Documento de contexto do projeto com o objetivo de aprendizado e conexões com a área de infraestrutura.
 
-## 🚀 Comece em 3 passos
-
-### 1️⃣ Instale um Harness
-
-O harness é o programa que dá vida ao agente. Recomendamos o **Google Antigravity**, que tem limites de uso mais generosos para quem está começando. Mas qualquer harness moderno funciona.
-
-| Harness | Documentação oficial |
-|---------|----------------------|
-| Google Antigravity (recomendado) | https://antigravity.google/docs |
-| Claude Code | https://docs.claude.com/en/docs/claude-code |
-| Codex | https://developers.openai.com/codex |
-| OpenCode | https://opencode.ai/docs |
-| Hermes | https://hermes-agent.nousresearch.com/docs |
-
-Escolha um e siga o passo a passo da documentação oficial dele. Cada documentação já traz tudo certinho para o seu sistema, então a instalação é tranquila.
-
-### 2️⃣ Configure o DIO Agent
-
-Agora você vai baixar este repositório para o seu computador. Escolha a forma mais simples para você:
-
-**Opção A: com Git** (se você já usa Git)
-
-```bash
-git clone https://github.com/digitalinnovationone/dio-agent.git
-```
-
-**Opção B: baixando o .zip** (se você não usa Git)
-
-Na página do repositório no GitHub, clique no botão verde **Code** e depois em **Download ZIP**. Em seguida, extraia a pasta em um lugar fácil de encontrar.
-
-Com o repositório baixado, abra a pasta `dio-agent` no harness que você instalou. Cada harness tem o seu jeito de abrir uma pasta de projeto, e a documentação dele mostra como fazer isso.
-
-E é só isso! O harness lê automaticamente o arquivo `AGENTS.md` e o agente já sabe quem é: o seu mentor de estudos da DIO.
-
-> 🔄 **Fique de olho nas atualizações.** Não importa se você usou o Git ou o .zip: o repositório do DIO Agent evolui com o tempo. De tempos em tempos, vale voltar aqui e pegar a versão mais recente. Quem usou Git pode rodar `git pull` (ou pedir pro próprio DIO Agent rodar); quem baixou o .zip pode baixar de novo. Assim o seu mentor está sempre com o melhor que a gente tem a oferecer.
-
-### 3️⃣ Hands On!
-
-Agora é só conversar. Você pode falar naturalmente, com as suas palavras. Mas, principalmente nas primeiras vezes, vale usar um modelo de prompt pronto: é só copiar e preencher os campos entre colchetes. Quanto mais contexto você dá, melhor o agente ajuda.
-
-**🗺️ Plano de estudos**
-
-```
-Quero montar um plano de estudos (se possível, com materiais complementares).
-- Meu objetivo: [ex: aprender mais sobre IA, ser dev back-end, concluir um bootcamp]
-- Experiência ou carreira da DIO: [URL ou nome do bootcamp/formação, ou de uma carreira da DIO]
-- Meu nível hoje: [iniciante, intermediário, avançado]
-- Tempo disponível: [ex: 1 hora por dia, de segunda a sexta]
-```
-
-**🔓 Destravar desafio**
-
-```
-Estou travado em um Desafio de [Código, Projeto ou Criativo] da DIO.
-- O que o desafio pede: [cole o enunciado ou descreva]
-- Onde eu travei: [explique o ponto da dificuldade]
-- Meu código atual: [cole aqui, se for Desafio de Código]
-- Link do repositório base: [cole aqui, se for Desafio de Projeto]
-Me ajuda a destravar sem dar a resposta pronta.
-```
-
-**💡 Explicar conceito**
-
-```
-Me explica o conceito de [ex: API, laço de repetição, herança].
-- Meu nível: [nunca vi, já ouvi falar, quero aprofundar]
-- Onde apareceu: [ex: no curso X de um bootcamp] (opcional)
-```
-
-Não precisa de comando especial nem de formato perfeito: o agente conduz a conversa a partir daí e pede mais detalhes se precisar.
+### Raciocínio Investigativo, Labs e Conferências (Vídeo)
+* **IppSec (YouTube):** Referência internacional em resolução prática de máquinas (Hack The Box). Seu conteúdo enfatiza o pensamento crítico, a análise aprofundada na enumeração de portas/serviços e a lógica investigativa antes de qualquer exploração.
+* **DEF CON Conference (YouTube):** A maior e mais tradicional conferência de segurança ofensiva do mundo, trazendo pesquisas inéditas sobre falhas de protocolos e novas técnicas.
+* **Black Hat (YouTube):** Conferência de referência corporativa global com foco em ameaças avançadas e segurança de infraestruturas críticas.
+* **Roadsec (YouTube):** Maior evento de segurança e hacking da América Latina, contextualizando a realidade da comunidade e dos desafios de segurança cibernética no Brasil.
 
 ---
 
-## 🧩 As skills do agente
+## ⚙️ 3. Diretriz de Comportamento (Persona & System Prompt)
 
-Uma **skill** é uma habilidade do agente, descrita em um guia passo a passo. O DIO Agent vem com três:
+Para garantir que as respostas do Gemini Notebook fossem precisas, técnicas e alinhadas ao meu momento de carreira, utilizei a estratégia de **Nota de Sistema** (`00 - Diretriz de Comportamento e Persona do Mentor`) como fonte ativa constante:
 
-| Skill | Para que serve |
-|-------|----------------|
-| [Plano de estudos](skills/study-plan/SKILL.md) | Organiza o que estudar, em que ordem e em quanto tempo |
-| [Destravar desafio](skills/unblock-challenge/SKILL.md) | Conduz você até a solução de um desafio, sem dar a resposta pronta |
-| [Explicar conceito](skills/explain-concept/SKILL.md) | Explica conceitos de forma didática, com analogias e exemplos |
-
-Você não precisa "chamar" uma skill. O agente percebe o que você precisa e usa a skill certa sozinho.
-
----
-
-## 🗂️ Estrutura do repositório
-
-```
-dio-agent/
-├── README.md                        Este guia
-├── AGENTS.md                        Definição do agente (lida por qualquer harness)
-├── CLAUDE.md                        Atalho para o Claude Code
-│
-├── agent/
-│   ├── persona.md                   A personalidade e o tom do agente
-│   └── knowledge/
-│       ├── dio-platform.md          O que é a DIO
-│       └── learning-experiences.md  Os formatos de aprendizado da DIO
-│
-├── skills/
-│   ├── README.md                    O que são skills
-│   ├── study-plan/                  Skill: plano de estudos
-│   ├── unblock-challenge/           Skill: destravar desafio
-│   └── explain-concept/             Skill: explicar conceito
-│
-└── docs/
-    └── glossary.md                  Glossário de termos
+```text
+Você é um mentor sênior de Red Team e Segurança Ofensiva. Minha base é em infraestrutura e redes. Ao responder, sempre explique a causa-raiz da vulnerabilidade, faça a ponte com ambientes corporativos/Active Directory e cite os frameworks oficiais (como MITRE ATT&CK) presentes nas fontes. Seja direto e técnico.
 ```
 
-> 🔍 **Por que funciona em qualquer harness?** O coração do projeto é o arquivo `AGENTS.md`, um padrão aberto que harnesses modernos sabem ler. O `CLAUDE.md` apenas aponta para ele, então você pode usar o harness que preferir.
+### Validação do Comportamento
+Ao ser inicializado com a pergunta de apresentação de papel, o caderno prontamente confirmou sua função:
+> *"O meu papel neste caderno — Fundamentos Ofensivos: Consolidando Táticas de Red Team — é ajudar você a organizar, analisar e aprofundar seu conhecimento em segurança ofensiva e táticas de Red Team, conectando conceitos de infraestrutura com a prática de cibersegurança."*
 
 ---
 
-## 📖 Glossário rápido
+## 🔍 4. Perguntas Realizadas, Respostas e Fontes Utilizadas
 
-Termos como *agente*, *harness*, *skill* e *prompt* estão explicados com analogias simples no **[Glossário completo](docs/glossary.md)**. Se algum termo soar estranho, comece por lá.
+Abaixo estão dois testes práticos realizados no caderno que comprovam a qualidade e profundidade da síntese:
+
+### Pergunta 1: *Como funciona o ataque Man-in-the-Middle (MiTM)?*
+* **Resumo da resposta gerada:**
+  * **Causa-Raiz:** Falta de autenticação mútua estrita em protocolos legados, broadcast/multicast (LLMNR, NBT-NS) e tráfego em texto claro ou sem assinatura digital (ex.: SMB sem *SMB Signing*).
+  * **Ciclo de Ataque:** Mapeou as fases de Interceptação/Poisoning, Manipulação/Captura e Relay.
+  * **Cenários de AD & Red Team:** Detalhou o *ARP Cache Poisoning* (MITRE ATT&CK **T1557.002**), envenenamento de LLMNR/NBT-NS (**T1557.001**) para captura de hashes NTLMv2 via *Responder*, e o ataque de **NTLM Relay**.
+  * **Mitigações de Infra:** Desativação de LLMNR/NBT-NS via GPO, imposição de *SMB/LDAP Signing* e controles em switch como *Dynamic ARP Inspection (DAI)* e *DHCP Snooping*.
+* **Fontes utilizadas pelo Notebook:** MITRE ATT&CK, The Hacker Recipes e IppSec.
 
 ---
 
-## 💬 Sobre este projeto
+### Pergunta 2: *Como explorar e prevenir acessos indevidos pelo roubo de MAC em uma rede L2 e L3?*
+* **Resumo da resposta gerada:**
+  * **Causa-Raiz:** 
+    * *Camada 2:* O protocolo Ethernet não autentica a origem do quadro na tabela CAM dos switches.
+    * *Camada 3:* O protocolo ARP é *stateless* e aceita respostas não solicitadas (*Gratuitous ARP*).
+  * **Vetores Ofensivos:** 
+    * Bypass de NAC via clonagem de MAC em dispositivos com MAB (*MAC Authentication Bypass*, como impressoras/telefones IP);
+    * Man-in-the-Middle via ARP Poisoning (MITRE ATT&CK **T1557.002**) para captura e relay de credenciais;
+    * Ataques de *MAC Flooding* para exaustão de tabela CAM.
+  * **Impacto em AD:** Salto de VLANs segregadas para pivoting direto contra Domain Controllers.
+  * **Prevenção em Infraestrutura:**
+    * *Camada 2:* Implantação de **802.1X (EAP-TLS)**, *Port Security* (sticky MAC), **DHCP Snooping** e **Dynamic ARP Inspection (DAI)**.
+    * *Camada 3:* Implementação de **IP Source Guard (IPSG)** e microsegmentação com firewall.
+* **Fontes utilizadas pelo Notebook:** The Hacker Recipes, MITRE ATT&CK, IppSec e conferências técnicas (DEF CON / Roadsec).
 
-O DIO Agent foi criado para acompanhar você desde o início dos Bootcamps e Formações da DIO. A ideia é simples: aprender na era da IA fica mais fácil quando você tem um mentor disponível a qualquer hora.
+---
 
-Bons estudos, e vem com a gente. 🚀
+## 🔗 5. Link do Notebook Compartilhado
+
+Acesse o caderno interativo com todas as fontes e notas configuradas:  
+👉 [Google NotebookLM - Fundamentos Ofensivos: Consolidando Táticas de Red Team](https://notebook.google.com/notebook/bd485f67-7176-4713-9651-c01c0b87f7d8)
